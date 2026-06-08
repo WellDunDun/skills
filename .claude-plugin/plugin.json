@@ -1,6 +1,7 @@
 {
   "name": "danielpetro-skills",
   "skills": [
+    "./skills/design-agent-prompt-loop",
     "./skills/setup-build-verify-loop"
   ]
 }

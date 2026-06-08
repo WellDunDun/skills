@@ -56,6 +56,7 @@ The served skills are listed in `.claude-plugin/plugin.json`:
 {
   "name": "danielpetro-skills",
   "skills": [
+    "./skills/design-agent-prompt-loop",
     "./skills/setup-build-verify-loop"
   ]
 }
@@ -85,6 +86,7 @@ python3 -m json.tool .claude-plugin/plugin.json >/dev/null
 For this repo's current skill, the expected checks are:
 
 ```sh
+skills-ref validate skills/design-agent-prompt-loop
 skills-ref validate skills/setup-build-verify-loop
 python3 -m json.tool .claude-plugin/plugin.json >/dev/null
 ```
