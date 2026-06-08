@@ -6,10 +6,10 @@ These skills are meant to be practical project tools: discover how a repo builds
 
 ## Quickstart
 
-After this repository is published, install it with the skills installer using the published GitHub slug:
+Install it with the skills installer:
 
 ```sh
-npx skills@latest add <owner>/<repo>
+npx skills@latest add WellDunDun/skills
 ```
 
 Then select the skills you want to install in your coding agent.
