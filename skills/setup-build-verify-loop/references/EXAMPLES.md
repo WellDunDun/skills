@@ -12,6 +12,7 @@ Project stack: <frameworks, language versions, package manager>.
 Setup:
 - <install command>
 - Platform prerequisites: <browser/simulator/desktop runtime/services, or none>
+- Required agent skills: <serve-sim for mobile simulator projects, or none>
 - Required services: <database/cache/emulator/none>
 - Required env files or secrets: <.env.example, secret names, or none>
 
@@ -31,6 +32,7 @@ Runtime loop:
 - Start: <dev server/simulator/desktop/service command>
 - URL/device/window/port: <target>
 - Platform prerequisites: <browser/simulator/device/desktop runtime requirements>
+- Required agent skills: <serve-sim for mobile simulator projects, or none>
 - Health check: <curl/browser/simulator/desktop smoke command>
 
 Evidence:
@@ -76,6 +78,7 @@ Run app:
 - <runtime command>
 - <URL/device/desktop window/port>
 - Platform prerequisites: <browser/simulator/desktop runtime/services>
+- Required agent skills: <serve-sim for mobile simulator projects, or none>
 
 Quick check:
 - <fast verification command>

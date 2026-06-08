@@ -69,10 +69,11 @@ Capture:
 - Simulator/emulator list command and preferred target device.
 - App run command for simulator/emulator.
 - Unit/widget tests and integration/e2e tests.
+- Required agent skill: `serve-sim` for simulator-driven mobile verification.
 - Runtime inspection path: serve-sim, platform tooling, Flutter VM service, React Native devtools, or app-specific test runner.
 - Recording and screenshot commands.
 
-Default to `serve-sim` when available.
+For simulator-driven mobile projects, add the `serve-sim` skill as a prerequisite and default to it when available.
 
 ```md
 Mobile runtime loop:
@@ -83,7 +84,7 @@ Mobile runtime loop:
 - Evidence: record starting state, action, result state, and back/return path when relevant.
 ```
 
-Document required simulator/emulator runtime version, device name, diagnostic overlay rules, backend/tunnel/proxy needs, fixture login state, known startup issues, and reset commands.
+Document required simulator/emulator runtime version, device name, required agent skills such as `serve-sim`, diagnostic overlay rules, backend/tunnel/proxy needs, fixture login state, known startup issues, and reset commands.
 
 ### Desktop apps
 

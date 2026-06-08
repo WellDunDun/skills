@@ -29,6 +29,7 @@ Look for:
 - Task runners: `Makefile`, `justfile`, `Taskfile.yml`, `turbo.json`, `nx.json`, `moon.yml`, `mise.toml`.
 - CI truth: `.github/workflows/*`, `.gitlab-ci.yml`, CircleCI, Bitrise, Fastlane, deployment configs.
 - Runtime surfaces: web routes, mobile simulators, desktop apps, CLIs, workers, APIs, seed data, local services.
+- Mobile simulator projects should include the `serve-sim` skill as a prerequisite.
 
 See [REFERENCE.md](references/REFERENCE.md) for discovery commands, platform prerequisites, and failure handling.
 
@@ -78,7 +79,7 @@ For user-visible work, require reviewable evidence in addition to tests.
 - Store local artifacts under `.context/evidence/` or the repo's established equivalent.
 - PR-ready work must embed or link evidence where reviewers can access it; local paths alone are not enough.
 
-Default to `serve-sim` for mobile simulator control when available. See [REFERENCE.md](references/REFERENCE.md) for platform-specific prerequisites.
+For mobile simulator work, require the `serve-sim` skill and default to it for simulator control when available. See [REFERENCE.md](references/REFERENCE.md) for platform-specific prerequisites.
 
 ## Guardrails
 
