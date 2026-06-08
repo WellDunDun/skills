@@ -1,0 +1,6 @@
+{
+  "name": "danielpetro-skills",
+  "skills": [
+    "./skills/setup-build-verify-loop"
+  ]
+}
