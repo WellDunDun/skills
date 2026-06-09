@@ -23,6 +23,7 @@ The skills in this repo focus on making those loops explicit: self-driving agent
 ## Skills
 
 - **[design-agent-prompt-loop](./skills/design-agent-prompt-loop/SKILL.md)** — Designs autonomous prompting loops that let coding agents drive their own next steps, handoffs, reviews, and verification prompts. Use it when you want agents to keep moving without repeated follow-up prompts.
+- **[flutter-design-taste](./skills/flutter-design-taste/SKILL.md)** — Shapes high-taste Flutter UI implementation with product fit, Material and Cupertino choices, theme tokens, motion, accessibility, and performance references.
 - **[setup-build-verify-loop](./skills/setup-build-verify-loop/SKILL.md)** — Sets up project-specific build, test, runtime, and evidence verification loops for AI agents. Use it when onboarding a repo, documenting build/test commands, creating `AGENTS.md` instructions, or turning an ad hoc workflow into a repeatable loop.
 
 ## License

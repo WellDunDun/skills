@@ -2,6 +2,7 @@
   "name": "danielpetro-skills",
   "skills": [
     "./skills/design-agent-prompt-loop",
+    "./skills/flutter-design-taste",
     "./skills/setup-build-verify-loop"
   ]
 }
