@@ -1,6 +1,6 @@
 # Daniel Petro Skills
 
-Small, composable Agent Skills for giving coding agents better feedback loops.
+Small, composable Agent Skills by [Daniel Petro](https://www.danielpetro.dev/) for giving coding agents better feedback loops, sharper design judgment, and more reliable verification habits.
 
 These skills are meant to be practical project tools: discover how a repo builds, prove changes with the right checks, and leave future agents with a loop they can actually run.
 
