@@ -1,8 +1,8 @@
 # Daniel Petro Skills
 
-Small, composable Agent Skills by [Daniel Petro](https://www.danielpetro.dev/) for giving coding agents better feedback loops, sharper design judgment, and more reliable verification habits.
+Small, composable Agent Skills by [Daniel Petro](https://www.danielpetro.dev/) for making coding agents easier to understand, giving them better feedback loops, sharpening design judgment, and improving verification habits.
 
-These skills are meant to be practical project tools: discover how a repo builds, prove changes with the right checks, and leave future agents with a loop they can actually run.
+These skills are meant to be practical project tools: clarify agent output, discover how a repo builds, prove changes with the right checks, and leave future agents with a loop they can actually run.
 
 ## Quickstart
 
@@ -16,12 +16,13 @@ Then select the skills you want to install in your coding agent.
 
 ## Why these skills exist
 
-Agents work better when each project has a clear feedback loop. Most failures come from guessing commands, skipping runtime checks, or finishing without evidence that the changed behavior works.
+Agents work better when their output is readable and each project has a clear feedback loop. Most failures come from unclear communication, guessing commands, skipping runtime checks, or finishing without evidence that the changed behavior works.
 
 The skills in this repo focus on making those loops explicit: self-driving agent prompts, build commands, targeted tests, full checks, simulator or browser verification, and reviewable evidence.
 
 ## Skills
 
+- **[bro](./skills/bro/SKILL.md)** — Restates the last agent response in plain, concise human language with no jargon when an answer is too verbose, confusing, or hard to parse.
 - **[design-agent-prompt-loop](./skills/design-agent-prompt-loop/SKILL.md)** — Designs autonomous prompting loops that let coding agents drive their own next steps, handoffs, reviews, and verification prompts. Use it when you want agents to keep moving without repeated follow-up prompts.
 - **[flutter-design-taste](./skills/flutter-design-taste/SKILL.md)** — Shapes high-taste Flutter UI implementation with product fit, Material and Cupertino choices, theme tokens, motion, accessibility, and performance references.
 - **[setup-build-verify-loop](./skills/setup-build-verify-loop/SKILL.md)** — Sets up project-specific build, test, runtime, and evidence verification loops for AI agents. Use it when onboarding a repo, documenting build/test commands, creating `AGENTS.md` instructions, or turning an ad hoc workflow into a repeatable loop.
