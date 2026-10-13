@@ -83,10 +83,12 @@ Also validate `.claude-plugin/plugin.json` after manifest edits:
 python3 -m json.tool .claude-plugin/plugin.json >/dev/null
 ```
 
-For this repo's current skill, the expected checks are:
+For this repo's served skills, the expected checks are:
 
 ```sh
+skills-ref validate skills/create-product-learning
 skills-ref validate skills/design-agent-prompt-loop
+skills-ref validate skills/flutter-design-taste
 skills-ref validate skills/setup-build-verify-loop
 python3 -m json.tool .claude-plugin/plugin.json >/dev/null
 ```
