@@ -27,6 +27,10 @@ The skills in this repo make those loops explicit through agent prompts, project
 - **[flutter-design-taste](./skills/flutter-design-taste/SKILL.md)** — Shapes high-taste Flutter UI implementation with product fit, Material and Cupertino choices, theme tokens, motion, accessibility, and performance references.
 - **[setup-build-verify-loop](./skills/setup-build-verify-loop/SKILL.md)** — Sets up project-specific build, test, runtime, and evidence verification loops for AI agents. Use it when onboarding a repo, documenting build/test commands, creating `AGENTS.md` instructions, or turning an ad hoc workflow into a repeatable loop.
 
+## Related projects
+
+- **[Arabic poetry](https://github.com/WellDunDun/arabic-poetry)** — A separate collaborative skill for writing, revising, explaining, and analyzing classical and modern Arabic poetry. Install it from its own repository.
+
 ## License
 
 MIT. See [LICENSE](./LICENSE).

@@ -94,3 +94,7 @@ python3 -m json.tool .claude-plugin/plugin.json >/dev/null
 ```
 
 Final responses for repo edits should report changed files and validation results.
+
+## Related repositories
+
+The collaborative Arabic poetry skill and its research live in [WellDunDun/arabic-poetry](https://github.com/WellDunDun/arabic-poetry). Link to it from the public README and compact skills index; keep its package and validation in that repository, outside this collection's served manifest.
