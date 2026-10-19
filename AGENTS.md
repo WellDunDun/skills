@@ -87,6 +87,7 @@ For this repo's served skills, the expected checks are:
 
 ```sh
 skills-ref validate skills/create-product-learning
+skills-ref validate skills/design-agent-native-cli
 skills-ref validate skills/design-agent-prompt-loop
 skills-ref validate skills/flutter-design-taste
 skills-ref validate skills/setup-build-verify-loop

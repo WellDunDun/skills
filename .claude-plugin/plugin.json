@@ -2,6 +2,7 @@
   "name": "danielpetro-skills",
   "skills": [
     "./skills/create-product-learning",
+    "./skills/design-agent-native-cli",
     "./skills/design-agent-prompt-loop",
     "./skills/flutter-design-taste",
     "./skills/setup-build-verify-loop"
