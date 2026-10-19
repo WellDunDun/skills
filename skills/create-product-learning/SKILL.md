@@ -1,6 +1,6 @@
 ---
 name: create-product-learning
-description: Creates provider-agnostic product education through help centers, guided learning paths, contextual onboarding, and lifecycle email lessons grounded in actual product behavior. Use when preparing a product launch, building a customer academy or step-through learning center, helping users reach an aha moment, improving product adoption, reducing repeat support questions, or setting up an onboarding email sequence.
+description: Creates provider-agnostic product education through help centers, guided learning paths, contextual in-app walkthroughs, optional narrated and captioned videos, and lifecycle email lessons grounded in actual product behavior. Use when preparing a product launch, building a customer academy or step-through learning center, creating product tutorials, helping users reach an aha moment, improving product adoption, reducing repeat support questions, or setting up an onboarding email sequence.
 ---
 
 # Create product learning
@@ -9,8 +9,8 @@ Build a connected education experience that helps users achieve a useful result,
 
 ## Provider independence
 
-- Use the product's existing application stack, content tools, components, authentication, storage, analytics, scheduler, and email integrations. Keep content and sequence definitions provider-agnostic, then map them to the capabilities actually available. Honor an explicit user choice of provider.
-- Third-party names and links in this skill are research sources or optional workflow examples, not requirements. Customer.io, Intercom, Userflow, Skilljar, PersonWise, and the linked skills are not dependencies. Do not install, subscribe to, or migrate to a linked product merely because it appears in the research.
+- Use the product's existing application stack, walkthrough package, content tools, components, authentication, storage, analytics, scheduler, and email integrations. Keep content and sequence definitions provider-agnostic, then map them to the capabilities actually available. Honor an explicit user choice of provider or package.
+- Third-party names and links in this skill are research sources, optional workflow examples, or optional implementation candidates, not requirements. No named vendor, package, or linked skill is a required dependency. Do not install, subscribe to, or migrate to a linked product merely because it is mentioned.
 - When a capability is missing, use an appropriate implementation in the existing stack or deliver portable content and configuration with the gap labeled. Introduce a new service only within an explicit request or an approved solution to that gap.
 
 Example request: "Use $create-product-learning to build launch education for this product, including a help center, a step-through learning center, and a draft email sequence using our existing provider."
@@ -36,21 +36,31 @@ Prioritize the shortest path to first value and the most costly or frequent obst
 
 Define a behavioral learning objective and a pass criterion for each core lesson. Build toward a meaningful task through a worked example, supported practice, and an independent attempt when the task warrants it. Reduce guidance for experienced users and restore hints when needed.
 
-## 3. Create the connected experience
+## 3. Choose the teaching format
+
+For each priority task, record the format, why it fits, and how to check task success. Read [format selection and walkthroughs](references/WALKTHROUGHS.md).
+
+- Prioritize contextual in-app walkthroughs when users can learn by doing safely in their current role and product state. For a simple task, a short hint or direct instruction may be enough. Avoid forced tours that only describe features.
+- Reuse the existing walkthrough package before introducing another. For web products without a suitable existing package, consider Driver.js for framework-independent guidance or React Joyride when React integration fits. Both are optional; follow the [package-selection guidance](references/WALKTHROUGHS.md).
+- Offer narrated, captioned video when an overview, visible sequence, cross-role handoff, unavailable practice environment, or risky action benefits from demonstration. Keep it optional alongside a direct task/help route; do not produce every format by default.
+- Choose actual recordings, real screenshots, or clearly labeled illustrations according to access and task needs. Distinguish a demonstration from verified execution and video completion from task completion. Use the existing stack and available media tools without requiring a video provider.
+
+## 4. Create the connected experience
 
 Read [content and learning formats](references/CONTENT.md) for the deliverables in scope.
 
 - **Help center:** Search and improve existing answers before adding task-based navigation, a quickstart, core how-to articles, troubleshooting, and FAQs supported by real questions. Include permissions, billing, integrations, or data handling when relevant and verified. Supply search terms, related links, and a clear support route.
 - **Step-through learning center:** Create ordered paths by user goal or role. Each lesson explains the result, leads to an action in the product, shows what success looks like, and offers recovery. Provide visible progress, resume, skip, and links to deeper help.
-- **Contextual learning:** Add checklists, empty-state guidance, or short tours where they help a user complete the mapped task. Make guidance dismissible and available again. Use real completion signals when available.
+- **Contextual learning:** Guide the user through the mapped task with cues at the relevant controls and checks for actual results. Make guidance dismissible, resumable, and available again. Use checklists or empty-state guidance when sufficient.
 - **Email learning:** If an email provider or sequence exists, read [email setup](references/EMAIL.md), write the lessons, and configure the supported draft or local integration within the user's authorization. If none exists, deliver portable messages and a sequence specification without choosing or buying a service.
-- Add demo scripts, annotated screenshots, reusable examples, templates, or short videos where they explain a difficult action. Use verified captures or clearly labeled sample data; provide text alternatives. Avoid producing every format by default.
+- **Optional video:** When selected, create a task storyboard, narration, synchronized captions, useful screen views, and a rendered walkthrough using [the video workflow and GMN example](references/WALKTHROUGHS.md). Provide a text alternative and a next action in the product. Report a script-only deliverable as a script.
+- Add reusable examples, templates, or annotated screenshots where they reduce practice effort.
 
 Reuse a shared lesson ID, outcome, terminology, source, and destination across channels. Email should send users to the same task and learning path rather than create a second curriculum.
 
 Separate guided tutorials from quick task answers, factual reference, and deeper explanations. Link between them without forcing a four-section site. Offer useful application checks with feedback; keep ordinary help accessible without passing a quiz. Reinforce learning at relevant reuse moments through practice, not repeated exposure alone.
 
-## 4. Implement within the requested scope
+## 5. Implement within the requested scope
 
 When asked to build or set up the experience, create working content, routes, navigation, progress behavior, and draft sequence configuration in the existing stack. A curriculum outline alone does not satisfy a request for a working learning center.
 
@@ -60,7 +70,7 @@ If product access is missing, create evidence-backed content and mark unverifiab
 
 Prepare concrete, reviewable artifacts before requesting any additional authorization required to publish, activate, enroll recipients, or send. Proceed with actions already authorized; access to a provider alone does not authorize messaging its users.
 
-## 5. Verify, measure, and maintain
+## 6. Verify, measure, and maintain
 
 Read [verification and measurement](references/VERIFY.md). Walk the first-value path and one recovery path using the audience's permissions. Verify links, actual UI labels, lesson actions, completion and resume behavior, accessibility, and email skip/exit behavior. Check independent performance on a small task variation; distinguish an agent walkthrough from a target-user learning test. Run checks appropriate to changed code and report unavailable runtime checks.
 
@@ -72,4 +82,4 @@ For research rationale and its limits, read the [evidence notes](references/EVID
 
 ## Final response
 
-Report the audience and first-value hypothesis, created files or configured resources, verified user journeys, email state, unresolved assumptions, and measurement plan. Distinguish drafted, implemented locally, tested, published, activated, and sent. Claim adoption or retention improvement only when measured.
+Report the audience and first-value hypothesis, chosen formats and rationale, created files or configured resources, verified user journeys, email state, unresolved assumptions, and measurement plan. For video, identify capture type, narration/caption checks, and rendered output or missing production steps. Distinguish drafted, implemented locally, tested, rendered, published, activated, and sent. Claim adoption or retention improvement only when measured.

@@ -70,8 +70,6 @@ Keep lesson access rules consistent with the product. Verify restricted deep lin
 
 ## Contextual guidance and optional media
 
-Place a short explanation beside an unfamiliar or blocked action. Use a checklist when several necessary tasks lead to value. Use a tour only when spatial guidance helps. Provide restart and dismiss controls, and avoid forcing experienced users through completed tasks.
+Choose the least intrusive format that helps the learner perform the task. Use [format selection and walkthroughs](WALKTHROUGHS.md) for contextual in-app guidance, narrated and captioned video production, and the real GMN example. Keep the same objective, terminology, help links, and task-success criteria across formats.
 
-Prefer stable component hooks to brittle tour selectors when the stack supports them. Verify guidance when its target is absent, permission-restricted, or on a smaller screen.
-
-Use a template or sample dataset when it reduces setup effort. Capture actual product screens when available, remove private information, and date or version the capture. Clearly label mockups and sample data. A media script is a script; claim a produced video only after it has been rendered and inspected.
+Use a template or sample dataset when it reduces setup effort. Clearly label sample data. Keep task instructions available as text even when video or interactive guidance is offered.

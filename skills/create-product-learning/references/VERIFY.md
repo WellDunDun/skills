@@ -14,6 +14,12 @@ For an unfamiliar core task, also observe an authorized representative user atte
 
 For code changes, run the project's relevant type, build, and behavior checks. Capture reviewable UI evidence when useful. A build passing does not prove the user reached the expected result. If access prevents a walkthrough, report which instructions remain unverified.
 
+## Check the chosen format
+
+- For in-app walkthroughs, verify the correct role and entry state, actual action/result checks, skip/resume/replay, absent or hidden targets, error recovery, keyboard access, and narrow layouts. Guidance must not advance merely because the user clicked Next when the task requires a successful action.
+- For video, follow the [render and playback checks](WALKTHROUGHS.md). Inspect the exported file, listen to narration, and check captions against both speech and the visible action. Keep recordings, screenshot sequences, and illustrations accurately labeled. Frame checks alone do not verify audio or caption timing.
+- Assess independent task success, errors, recovery, and help requests for the chosen format. When comparing formats, use equivalent tasks, audience roles, and starting states. Report the comparison design and limitations; do not infer learning from views or video completion.
+
 ## Measurement plan
 
 Choose the few measures relevant to the requested scope. Define identity level, qualifying event, denominator, cohort entry, observation window, exclusion rules, and baseline or comparison. Distinguish implemented events from proposed instrumentation.
