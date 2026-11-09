@@ -1,0 +1,4 @@
+interface:
+  display_name: "CI Throughput"
+  short_description: "Reduce CI queues without weakening checks"
+  default_prompt: "Use $ci-throughput to audit this repository’s CI bottlenecks and propose safe, measured improvements."

@@ -87,6 +87,7 @@ For this repo's served skills, the expected checks are:
 
 ```sh
 skills-ref validate skills/ci-cost-trim
+skills-ref validate skills/ci-throughput
 skills-ref validate skills/create-product-learning
 skills-ref validate skills/design-agent-native-cli
 skills-ref validate skills/design-agent-prompt-loop

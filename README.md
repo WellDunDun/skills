@@ -23,6 +23,7 @@ The skills in this repo make those loops explicit through agent prompts, project
 ## Skills
 
 - **[ci-cost-trim](./skills/ci-cost-trim/SKILL.md)**. Audits GitHub Actions usage and reduces wasted runs, runner minutes, and runtime while preserving required checks.
+- **[ci-throughput](./skills/ci-throughput/SKILL.md)**. Diagnoses CI queues, checkout overhead, idle polling, and flaky required tests to improve feedback time without weakening checks.
 - **[create-product-learning](./skills/create-product-learning/SKILL.md)** — Creates a connected help center, step-through learning paths, contextual onboarding, and email lessons from actual product behavior. Use it to prepare launch education, guide users to their first useful result, and address repeat support questions.
 - **[design-agent-native-cli](./skills/design-agent-native-cli/SKILL.md)**. Designs and audits CLIs for reliable agent use through non-interactive commands, structured output, safe retries, discoverable contracts, and recoverable workflows.
 - **[design-agent-prompt-loop](./skills/design-agent-prompt-loop/SKILL.md)** — Designs autonomous prompting loops that let coding agents drive their own next steps, handoffs, reviews, and verification prompts. Use it when you want agents to keep moving without repeated follow-up prompts.

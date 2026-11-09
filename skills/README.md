@@ -1,6 +1,7 @@
 # Skills
 
 - **[ci-cost-trim](./ci-cost-trim/SKILL.md)**. Audit GitHub Actions and cut CI minutes and runtime without weakening required checks.
+- **[ci-throughput](./ci-throughput/SKILL.md)**. Improve CI throughput by investigating checkout overhead, waiting runners, concurrency, and flaky required checks.
 - **[create-product-learning](./create-product-learning/SKILL.md)** — Create help centers, step-through learning paths, contextual guidance, and email lessons that help users reach first value and learn to use a product.
 - **[design-agent-native-cli](./design-agent-native-cli/SKILL.md)**. Design and audit agent-native CLIs with structured output, safe retries, introspection, async recovery, profiles, and artifact delivery.
 - **[design-agent-prompt-loop](./design-agent-prompt-loop/SKILL.md)** — Design autonomous prompting loops that let coding agents drive their own next steps, handoffs, reviews, and verification prompts.
