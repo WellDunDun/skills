@@ -1,0 +1,4 @@
+interface:
+  display_name: "CI Optimize"
+  short_description: "Cut CI waste and shorten reliable feedback"
+  default_prompt: "Use $ci-optimize to measure this repository's CI cost and feedback latency, identify bottlenecks, and propose or implement the requested improvements without weakening checks."

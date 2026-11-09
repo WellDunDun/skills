@@ -1,8 +1,7 @@
 {
   "name": "danielpetro-skills",
   "skills": [
-    "./skills/ci-cost-trim",
-    "./skills/ci-throughput",
+    "./skills/ci-optimize",
     "./skills/create-product-learning",
     "./skills/design-agent-native-cli",
     "./skills/design-agent-prompt-loop",

@@ -22,13 +22,14 @@ The skills in this repo make those loops explicit through agent prompts, project
 
 ## Skills
 
-- **[ci-cost-trim](./skills/ci-cost-trim/SKILL.md)**. Audits GitHub Actions usage and reduces wasted runs, runner minutes, and runtime while preserving required checks.
-- **[ci-throughput](./skills/ci-throughput/SKILL.md)**. Diagnoses CI queues, checkout overhead, idle polling, and flaky required tests to improve feedback time without weakening checks.
+- **[ci-optimize](./skills/ci-optimize/SKILL.md)**. Reduces CI waste and time to trustworthy feedback by measuring run volume, queues, checkout, caching, waiting runners, and test reliability while preserving required checks.
 - **[create-product-learning](./skills/create-product-learning/SKILL.md)** — Creates a connected help center, step-through learning paths, contextual onboarding, and email lessons from actual product behavior. Use it to prepare launch education, guide users to their first useful result, and address repeat support questions.
 - **[design-agent-native-cli](./skills/design-agent-native-cli/SKILL.md)**. Designs and audits CLIs for reliable agent use through non-interactive commands, structured output, safe retries, discoverable contracts, and recoverable workflows.
 - **[design-agent-prompt-loop](./skills/design-agent-prompt-loop/SKILL.md)** — Designs autonomous prompting loops that let coding agents drive their own next steps, handoffs, reviews, and verification prompts. Use it when you want agents to keep moving without repeated follow-up prompts.
 - **[flutter-design-taste](./skills/flutter-design-taste/SKILL.md)** — Shapes high-taste Flutter UI implementation with product fit, Material and Cupertino choices, theme tokens, motion, accessibility, and performance references.
 - **[setup-build-verify-loop](./skills/setup-build-verify-loop/SKILL.md)** — Sets up project-specific build, test, runtime, and evidence verification loops for AI agents. Use it when onboarding a repo, documenting build/test commands, creating `AGENTS.md` instructions, or turning an ad hoc workflow into a repeatable loop.
+
+`ci-optimize` replaces `ci-cost-trim` and `ci-throughput`. If you installed either earlier, install the combined skill with `npx skills add WellDunDun/skills --skill ci-optimize` and remove the old local copies to avoid duplicate instructions.
 
 ## Related projects
 
