@@ -16,6 +16,7 @@ Default to a read-only audit when asked to review; implement only requested chan
 - Collect the last 30 days of runs where available. For GitHub Actions, use `gh run list` and job details through `gh api`, paginating to cover the window. Existing `codiform/gh-actions-usage` or `fchimpan/gh-workflow-stats` installations can help. Label incomplete history.
 - Record run counts, events, branches, actor attribution with confidence, failure rates, and workflow shares. Include retries and matrix jobs. Sum job durations for runner minutes; distinguish elapsed workflow time and billed usage.
 - Separate queue delay, checkout/setup, useful execution, occupied waiting, artifact transfer, and retries along the critical path. Compare like revisions, runner classes, cache states, events, and concurrency; record sample sizes and infrastructure failures separately.
+- Set repo-specific p50/p95 feedback targets and define the clock, from commit arrival to completion of all relevant PR checks, including queue time. Report merge-queue validation separately. A 2-minute median and 3-minute p95 is an example target, not a universal requirement. Report waiting/setup/execution percentiles independently; never sum bucket percentiles to derive end-to-end p95. Include sample sizes, incomplete/canceled runs, and unsuccessful outcomes so fast failures or cancellations cannot make the pipeline appear faster.
 - Investigate jobs that never acquire runners through annotations and availability evidence before attributing them to billing. Run existing static validation, including `actionlint` and `zizmor` for GitHub Actions; report unavailable tools or access.
 
 Rank findings by measured impact, effort, and correctness risk. If evidence is insufficient, state bounded hypotheses and the smallest measurement needed rather than inventing savings.
@@ -30,6 +31,8 @@ Rank findings by measured impact, effort, and correctness risk. If evidence is i
 - Merge duplicate work without renaming required statuses. Slow or move noisy crons, preserving monitoring until any replacement exists. Move expensive OS/matrix checks only when equivalent required coverage still runs before merge or release as applicable.
 
 ## 3. Improve necessary work
+
+Read [performance experiments](references/performance-experiments.md) when evaluating tool replacements, cache strategies, parallel jobs, worker/shard sizing, test isolation, affected-test correctness, local hooks, or enforced time budgets. Require comparable measurements and preserved fault detection before adopting a faster configuration.
 
 - Trace Git history consumers: diffs, merge bases, tags, versions, changelogs, blame, submodules, and release scripts. Use shallow history only where proven sufficient; fetch specific refs/tags or ancestry for bounded needs. Preserve full history when necessary and avoid arbitrary depths that silently lose merge bases.
 - Keep checkout tied to the intended immutable commit or queue state. Verify selected files, computed versions, and tag resolution match the baseline on relevant long-lived branches, tags, and queue events. Fail clearly or use a documented full-history fallback on ambiguity.
