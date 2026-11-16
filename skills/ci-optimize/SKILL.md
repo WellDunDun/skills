@@ -32,7 +32,7 @@ Rank findings by measured impact, effort, and correctness risk. If evidence is i
 
 ## 3. Improve necessary work
 
-Read [performance experiments](references/performance-experiments.md) when evaluating tool replacements, cache strategies, parallel jobs, worker/shard sizing, test isolation, affected-test correctness, local hooks, or enforced time budgets. Require comparable measurements and preserved fault detection before adopting a faster configuration.
+Read [performance experiments](references/performance-experiments.md) when evaluating tool replacements, cache strategies, parallel jobs, worker/shard sizing, test isolation, affected-test correctness, staged pre-commit or pre-push hooks, or enforced time budgets. Require comparable measurements and preserved fault detection before adopting a faster configuration.
 
 - Trace Git history consumers: diffs, merge bases, tags, versions, changelogs, blame, submodules, and release scripts. Use shallow history only where proven sufficient; fetch specific refs/tags or ancestry for bounded needs. Preserve full history when necessary and avoid arbitrary depths that silently lose merge bases.
 - Keep checkout tied to the intended immutable commit or queue state. Verify selected files, computed versions, and tag resolution match the baseline on relevant long-lived branches, tags, and queue events. Fail clearly or use a documented full-history fallback on ambiguity.
